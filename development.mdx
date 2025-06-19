@@ -1,107 +1,122 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: "Development: A Quick Start Guide"
+description: "This guide helps you set up your Keringit account, build your first project, and launch it on-chain. Whether you're using AI to build from scratch or uploading an existing repo, follow these steps to get started quickly"
 ---
 
-<Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding. <br />
-  Please upgrade to ```docs.json``` before proceeding and delete the legacy ```mint.json``` file.
-</Info>
+## 1. Create Your Keringit Account
 
-Follow these steps to install and run Mintlify on your operating system:
+### Sign Up or Connect Wallet
 
-**Step 1**: Install Mintlify:
+- You can create an account using **email and password**, or
+- **Connect your wallet** _(MetaMask or WalletConnect supported)_.
+- Wallet connection also enables direct onchain deployments later
 
-<CodeGroup>
+### Set Up Your Profile
 
-  ```bash npm
-  npm i -g mintlify
-  ```
+- Set up your profile _(can be changed later)_.
+- You can customize notifications and toggle between dark/light mode in settings
 
-```bash yarn
-yarn global add mintlify
-```
+### Access Your Dashboard
 
-</CodeGroup>
+- After logging in, you’ll land on the **Keringit dashboard**
+- Here you can:
+  - Create new projects
+  - View or edit your existing builds
+  - Monitor deployments, templates, and AI drafts
 
-**Step 2**: Navigate to the docs directory (where the `docs.json` file is located) and execute the following command:
+## 2. Start a New Project
 
-```bash
-mintlify dev
-```
+### Option A: Use a Template
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+- Go to **Templates** from the sidebar
+- Choose from pre-built dApp templates (e.g., NFT launchpads, staking apps, token contracts)
+- You can begin customizing instantly.
 
-### Custom Ports
+### Option B: Build with AI
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. To run Mintlify on port 3333, for instance, use this command:
+- Head to **AI Builder**
+- Type what you want to build in plain English:
 
-```bash
-mintlify dev --port 3333
-```
+  > Example: "Write a smart contract for a token XYZ with 2% tax on buys."
+- Keringit will auto-generate:
+  - Smart contracts
+  - Frontend UI
+  - Recommended testnet setup
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
+### Option C: Import Code
 
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
+- Upload your files manually or sync from GitHub
+- Supported:
+  - Solidity contracts
+  - Frontend files
+  - ABIs and environment configs
 
-## Mintlify Versions
+## 3. Build and Customize
 
-Please note that each CLI release is associated with a specific version of Mintlify. If your local website doesn't align with the production version, please update the CLI:
+### Use the Visual or Code Editor
 
-<CodeGroup>
+- You can choose between:
+  - **Visual Builder** – tweak layout, connect wallet buttons, and add contract interactions
+  - **Code Editor** – edit raw smart contracts and frontend files directly
 
-```bash npm
-npm i -g mintlify@latest
-```
+### Smart Contract Development
 
-```bash yarn
-yarn global upgrade mintlify
-```
+- Get real-time syntax checking
+- Preview ABI structure
+- Add functions, events, and modifiers directly or with AI suggestions
 
-</CodeGroup>
+### Local Testing
 
-## Validating Links
+- Deploy to **testnets** 
+- Get test tokens from integrated faucets
+- Simulate interactions _(buy/sell/stake/mint)_ before going live
 
-The CLI can assist with validating reference links made in your documentation. To identify any broken links, use the following command:
+### AI Assistance
 
-```bash
-mintlify broken-links
-```
+- Keringit’s AI reviews your smart contracts as you code
+- Suggestions may include:
+  - Fixing logic errors
+  - Gas optimizations
+  - Security best practices (e.g., reentrancy, overflow)
 
-## Deployment
+## 4. Deploy and Go Live
 
-<Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
-</Tip>
+### Select Network
 
-If the deployment is successful, you should see the following:
+- Choose from supported chains: Ethereum, Solana, Polkadot, BNB, Polygon, TON, etc.
+- Add custom RPCs for private or test networks if needed
 
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
+### Configure Deployment
 
-## Code Formatting
+- Set your parameters:
+  - Contract name and version
+  - Gas settings
+  - Optional constructor arguments
+  - Frontend environment variables
 
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
+### Launch Project
 
-## Troubleshooting
+- Hit **Deploy**
+- Track build status in real-time: contract compile → verification → deployment
+- Once deployed, get:
+  - Public smart contract address
+  - Frontend URL (hosted or exportable)
+  - Auto-generated technical documentation
 
-<AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
+---
 
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall mintlify: `npm install -g mintlify`
-  </Accordion>
+## 5. Monitor and Improve
 
-  <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
-  </Accordion>
-</AccordionGroup>
+### Analytics Dashboard
 
-Curious about what changed in the CLI version? [Check out the CLI changelog.](https://www.npmjs.com/package/mintlify?activeTab=versions)
+- View wallet usage, function calls, and tx volume
+- Error logs help debug user issues
+- See AI recommendations for performance and UX improvements
+
+### Continuous Updates
+
+- Push changes and redeploy directly
+- Use Git-based version control if synced from GitHub
+- Collaborate with team members using shared access
+
+---
