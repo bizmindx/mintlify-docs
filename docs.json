@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "Keringit.ai",
   "colors": {
     "primary": "#16A34A",
@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Docs",
         "groups": [
           {
             "group": "Get Started",
@@ -40,12 +40,12 @@
         {
           "anchor": "Discord",
           "href": "https://discord.gg/35DTzaUD",
-          "icon": "slack"
+          "icon": "discord"
         },
         {
           "anchor": "Twitter",
           "href": "https://x.com/keringit",
-          "icon": "twitter"
+          "icon": "x"
         }
       ]
     }
@@ -57,14 +57,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Talk to founder",
+        "href": "mailto:joseph@keringit.ai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Get Alpha Access",
+      "href": "https://forms.gle/8MMai2cJgjW5nq4Q9"
     }
   },
   "footer": {
