@@ -5,7 +5,7 @@
   "colors": {
     "primary": "#4d1481",
     "light": "#4d1481",
-    "dark": "#2c3066"
+    "dark": "#a156f6"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -24,7 +24,8 @@
           {
             "group": "Development",
             "pages": [
-              "architeture"
+              "architecture",
+              "advancefeatures"
             ]
           }
         ]
