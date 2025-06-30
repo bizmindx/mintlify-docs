@@ -4,8 +4,8 @@
   "name": "Keringit.ai",
   "colors": {
     "primary": "#4d1481",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "light": "#4d1481",
+    "dark": "#2c3066"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -57,7 +57,7 @@
   "navbar": {
     "links": [
       {
-        "label": "Talk to founder",
+        "label": "Talk to Team",
         "href": "mailto:joseph@keringit.ai"
       }
     ],
